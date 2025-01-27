@@ -1,0 +1,27 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+      "config:best-practices", // Best practices for Renovate
+      ":gitSignOff", // Add Signed-off-by to commit messages
+      ":semanticCommits" // Use semantic commit messages
+    ],
+    "semanticCommitType": "build", // Use "build" as the commit type
+    "semanticCommitScope": "deps", // Use "deps" as the commit scope
+    "commitMessageLowerCase": "auto", // Ensure commit messages are lowercase
+    "commitBody": "Signed-off-by: {{{gitAuthor}}}", // Add Signed-off-by to commit body
+    "packageRules": [
+      {
+        "matchManagers": ["github-actions"], // Only manage GitHub Actions
+        "addLabels": ["actions"], // Add a label for GitHub Actions updates
+        "automerge": true, // Automatically merge minor and patch updates
+        "groupName": "GitHub Actions updates", // Group all GitHub Actions updates together
+        "matchUpdateTypes": ["minor", "patch"] // Only apply to minor and patch updates
+      },
+      {
+        "matchManagers": ["github-actions"], // Only manage GitHub Actions
+        "matchUpdateTypes": ["major"], // Handle major updates separately
+        "addLabels": ["actions", "major-update"], // Add labels for major updates
+        "groupName": "GitHub Actions major updates" // Group major updates separately
+      }
+    ]
+  }

@@ -11,7 +11,7 @@
 # 1. Add the following to your workflow file:
 #    jobs:
 #      reuse-compliance:
-#        uses: ./.github/workflows/reuse-compliance.yml
+#        uses: <orgname>/<reponame>/.github/workflows/<workflowname>.yml@main
 #
 # 2. Ensure your repository has a `.reuse/dep5` file or equivalent configuration
 #    to define licensing and copyright information.
