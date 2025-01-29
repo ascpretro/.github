@@ -10,4 +10,4 @@ Fixes #(issue)
 
 - [x] Changes are limited to a single goal (avoid scope creep)
 - [x] I confirm that I have read any Contribution and Development guidelines (CONTRIBUTING and DEVELOPMENT) and are following their suggestions.
-- [ ] I confirm that I wrote and/or have the right to submit the contents of my Pull Request, by agreeing to the _Developer Certificate of Origin_, (adding a 'sign-off' to my commits).
+- [x] I confirm that I wrote and/or have the right to submit the contents of my Pull Request, by agreeing to the _Developer Certificate of Origin_, (adding a 'sign-off' to my commits).

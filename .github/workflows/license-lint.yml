@@ -13,9 +13,6 @@
 #      reuse-compliance:
 #        uses: <orgname>/<reponame>/.github/workflows/<workflowname>.yml@main
 #
-# 2. Ensure your repository has a `.reuse/dep5` file or equivalent configuration
-#    to define licensing and copyright information.
-#
 # 3. The workflow will analyze your repository and report any REUSE compliance issues.
 ---
 name: REUSE Compliance

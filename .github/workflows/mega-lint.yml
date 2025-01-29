@@ -14,7 +14,7 @@
 #        with:
 #          megalinter-config: "path/to/your/megalinter.yml" # Optional
 #
-# 2. Ensure your repository has a MegaLinter configuration file (e.g., `.mega-linter.yml`).
+# 2. Ensure your repository has a MegaLinter configuration file (e.g., `.megalinter.yml`).
 #    If not, MegaLinter will use its default configuration.
 #
 # 3. The results will be available as artifacts and in the GitHub Security tab.
@@ -59,7 +59,7 @@ jobs:
           fetch-depth: 10
 
       - name: MegaLinter lint
-        id: ml
+        id: l
         uses: oxsecurity/megalinter@839e6d63c0423eb74ce2578225f8b8b4bed63ede # v8.4.1
 
       - name: Archive MegaLinter artifacts
