@@ -12,7 +12,7 @@
     "packageRules": [
       {
         "matchManagers": ["github-actions"], 
-        "addLabels": ["actions"], 
+        "addLabels": ["action"], 
         "automerge": true, 
         "groupName": "GitHub Actions updates",
         "matchUpdateTypes": ["minor", "patch"] 
