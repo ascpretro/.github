@@ -20,7 +20,7 @@
       {
         "matchManagers": ["github-actions"], 
         "matchUpdateTypes": ["major"], 
-        "addLabels": ["actions", "major-update"], 
+        "addLabels": ["action", "major-update"], 
         "groupName": "GitHub Actions major updates" 
       }
     ]
